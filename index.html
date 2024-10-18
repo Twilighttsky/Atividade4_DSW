@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+</head>
+<body>
+
+    <headedr>
+        <h1>Formulário de inscrição</h1>
+    </headedr>
+    
+    <main>
+        <form action="#" method="post">
+            
+            <!--Nome completo-->
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <!-- E-mail -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Telefone -->
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required><br><br>
+
+            <!-- Data de Nascimento -->
+            <label for="nascimento">Data de Nascimento:</label>
+            <input type="date" id="nascimento" name="nascimento" required><br><br>
+
+            <!-- Gênero -->
+<fieldset>
+    <legend>Gênero:</legend>
+            <label for="masculino">
+            <input type="radio" id="masculino" name="genero" value="Masculino" required> Masculino
+            </label>
+            <label for="feminino">
+            <input type="radio" id="feminino" name="genero" value="Feminino"> Feminino
+            </label>
+            <label for="outro">
+            <input type="radio" id="outro" name="genero" value="Outro"> Outro
+            </label>
+</fieldset><br>
+
+            <!-- Mensagem -->
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" maxlength="200" rows="5" required></textarea><br><br>
+
+            <!-- Tipo de Inscrição -->
+            <label for="tipo-inscricao">Tipo de Inscrição:</label>
+            <select id="tipo-inscricao" name="tipo-inscricao" required>
+            <option value="">Selecione uma opção</option>
+            <option value="palestrante">Palestrante</option>
+            <option value="participante">Participante</option>
+            <option value="voluntario">Voluntário</option>
+            </select><br><br>
+
+            <!-- Botões -->
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+
+        </form>
+        </main>
+
+        <footer>
+        <p>Todos os direitos reservados - 2024</p>
+        <p>Nome dos integrantes: <br> Mikael Silva de Sousa <br> Karol Nogueira Rodrigues Lima</p>
+        </footer>
+
+    </body>
+</html>
