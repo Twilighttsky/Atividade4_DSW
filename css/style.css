@@ -9,34 +9,117 @@ html {
     background-size: cover;
    width: 100%;
    height: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+header {
+    border-radius: 10px;
+    text-align: center;
 }
 
 main {
     background-color: #ffff;
-    max-width: 600px;
-    width: 600px;
-    height: 400px;
+    max-width: 700px;
+    width: 700px;
     border-radius: 10px;
+    margin-block-start: 45px;
+    margin-block-end: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
 }
 
-header {
-    background-color: aliceblue;
-    border-radius: 10px;
+h1 {
+    margin-top: 50px;
+    }
+    
+
+fieldset {
+    border: none;
 }
 
-footer {
-    background-color: aliceblue;
-    border-radius: 10px;
+form {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 50px;
 }
 
-input, textarea {
+textarea {
+    resize: none;
+}
+
+input[type="radio"] {
+    width: 30px;
+}
+
+input, textarea, select {
+    width: 250px;
+    border: 1px solid rgb(187, 184, 184);
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0px 0px 30px 2px;
     width: 100px;
 }
 
-button:hover {
-    background: aliceblue;
+button[type="submit"]{
+    background-color: rgb(6, 206, 6);
+}
+
+button[type="reset"]{
+    background-color: rgb(255, 71, 71);
+}
+
+
+textarea:focus {
     outline: none;
 }
+
+input, select:focus {
+    outline: none;
+    border: 1px solid grey;
+}
+
+button[type="submit"]:hover {
+    background: rgb(39, 185, 3);
+    border: 0px solid;
+}
+
+button[type="reset"]:hover {
+    background:  rgb(248, 57, 57);
+    border: 0px solid;
+}
+
+
+
+
+footer {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 90vw;
+    background: linear-gradient(to bottom, #CA78F5, #A379F5) no-repeat;
+}
+
